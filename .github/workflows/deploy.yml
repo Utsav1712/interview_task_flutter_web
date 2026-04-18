@@ -30,3 +30,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
+
+      - name: Show Deployment Link
+        run: |
+          echo "### 🚀 Deployment Successful!" >> $GITHUB_STEP_SUMMARY
+          echo "Your website is live at: https://Utsav1712.github.io/interview_task_flutter_web/" >> $GITHUB_STEP_SUMMARY
